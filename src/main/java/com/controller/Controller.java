@@ -23,8 +23,7 @@ public class Controller {
 		StudentSpringDao spring_dao = new StudentSpringDao();
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"com/spring_bean_config/connection_bean_spring_config.xml");
-		Student student = context.getBean("student", Student.class)
-		System.out.println("hii");
+		Student student = context.getBean("student", Student.class);
 		Main: do {
 			System.out.println("Use CRUD Operation By JDBC Enter-1\n" + "Use CRUD Operation By SPRING-CORE Enter-2\n"
 					+ "Use CRUD Operation By HIBERNATE Enter-3\n" + "Exit Enter-4");
